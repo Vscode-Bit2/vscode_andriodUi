@@ -1,0 +1,35 @@
+{  
+  "scopeName": "source.zsharp",  
+  "patterns": [  
+    {  
+      "include": "#comments"  
+    },  
+    {  
+      "include": "#keywords"  
+    }  
+  ],  
+  "repository": {  
+    "comments": {  
+      "patterns": [  
+        {  
+          "begin": "//",  
+          "end": "$",  
+          "name": "comment.line.double-slash.zsharp"  
+        },  
+        {  
+          "begin": "/\*",  
+          "end": "\*/",  
+          "name": "comment.block.zsharp"  
+        }  
+      ]  
+    },  
+    "keywords": {  
+      "patterns": [  
+        {  
+          "match": "\b(if|else|for|while|return|break|continue)\b",  
+          "name": "keyword.control.zsharp"  
+        }  
+      ]  
+    }  
+  }  
+}  
